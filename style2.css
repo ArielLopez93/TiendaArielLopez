@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+* {
+    font-family:'Inconsolata', monospace;
+    
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    background-image: url(IMG/back.jpg);
+    background-attachment: fixed ;
+    overflow:auto;
+    background-size: cover;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.botones{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+
+.botones ul{
+    display: flex;
+}
+
+
+.botones ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.botones ul li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.botones ul li a:hover{
+    color: rgb(177, 206, 14);
+    font-weight: 400;
+}
+
+.encabezado{
+    text-align: center;
+    width: 100%;
+}
+
+.encabezado img{
+    border-radius: 5px;
+    height: 80%;
+    width: 80%;
+}
+
+.catalogo{
+    display: flex;
+	justify-content: space-between;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.catalogo figure{
+    text-align: center;
+    width:30% ;
+}
+
+.catalogo figure img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+figcaption{
+    color: rgb(0, 0, 0);
+    background-color: gray;
+   
+}
+
+.video{
+   text-align: center;
+
+}
+
+.video iframe{
+
+}
+
+.parrafovideo{
+    
+    font-size: 1.5rem;
+    width: auto;
+
+}
+
+
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+.container{
+    display: grid;
+    width: 99%;
+    grid-template-columns:repeat(3,auto) ;
+    grid-template-rows:repeat(5,auto) ;
+    align-items: center;
+    grid-template-areas: "nav nav nav"
+    "video cabecera cabecera"
+    "s1 s1 s1"
+    "cont pie pie";  
+}
+
+
+.caja1{
+    grid-area: nav;
+}
+
+.caja2{
+    grid-area:cabecera;
+       
+}
+
+.caja3{
+    grid-area:s1;
+}
+
+.caja4{
+    grid-area: video;
+}
+
+.caja5{
+    grid-area:cont;
+   
+}
+
+.caja6{
+    grid-area: pie;
+    
+    
+}
+
+
+@media all and (max-width:768px){
+    .container{
+        grid-template-columns:1fr ;
+        grid-template-rows: auto ;
+        align-items: center;
+        grid-template-areas:  
+        "nav"
+        "cabecera"
+        "video"
+        "s1"
+        "cont"
+        "pie"
+
+    }
+    
+}
+
+
+
+
+/*.containern{
+    width: 99%;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "indu indu indu"
+    "acce acce acce"
+    "zapa zapa zapa"
+    "pie pie pie"
+
+}*/
+
+
+.caja1n{
+    grid-area:nav;
+
+}
+
+
+
+.caja2n{
+    grid-area:header;
+    
+
+}
+
+.caja3n{
+    grid-area:zapa;
+    
+
+}
+
+.caja4n{
+    grid-area:indu;
+    
+
+}
+
+.caja5n{
+    grid-area:acce;
+}
+
+.caja6n{
+    grid-area:pie;
+}
+
+
+
+
+
+/*@media all and (max-width:768px) {
+    .containern{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-area:
+         "nav"
+        "header"
+        "zapa"
+        "indu"
+        "acce"
+        "pie";
+    }
+}*/
+
+
+
+.containerm{
+    display: grid;
+    width: 99%;
+    grid-template-columns:repeat(3,auto) ;
+    grid-template-rows:repeat(5,auto) ;
+    align-items: center;
+    grid-template-areas:"navm navm navm"
+    "contm contm headerm"
+    "zapam zapam zapam"
+    "indum indum indum"
+    "piem piem piem";
+      
+
+}
+
+
+
+.mujer1{
+    grid-area: navm;
+
+}
+
+.mujer2{
+    grid-area:headerm ;
+    
+}
+
+.mujer3{
+    grid-area:zapam ;
+    
+}
+
+.mujer4{
+    grid-area: indum;
+    
+}
+
+.mujer5{
+    grid-area: contm;
+    text-align: center;
+    
+}
+
+.mujer6{
+    grid-area: piem;
+    
+}
+
+
+@media all and (min-width:768px){
+    .containerm{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        grid-area: "navm"
+        "headerm"
+        "indum"
+        "zapam"
+        "contm"
+        "piem";
+
+    }
+}
+
+
+
+
+.text-center{
+    text-align: center;
+}
