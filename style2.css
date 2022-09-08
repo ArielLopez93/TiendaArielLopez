@@ -7,6 +7,7 @@
 
 html{
     font-size:62.5%;
+    
 }
 
 body{
@@ -14,7 +15,11 @@ body{
     background-attachment: fixed ;
     overflow:auto;
     background-size: cover;
+    
 }
+
+
+
 
 h2{
     color: black;
@@ -23,33 +28,25 @@ h2{
 }
 
 
-.botones{
+#botones{
     display: flex;
 	justify-content: space-between;
 	align-items: center;
     position: sticky;
-    top: 0;
+    background-color: rgba(178, 197, 182, 50%);
+    
+    
 }
 
 
-.botones ul{
-    display: flex;
-}
-
-
-.botones ul li{
-    list-style: none;
-    margin-right: 20px;
-}
-
-.botones ul li a{
+#botones ul li a{
     font-size: 2rem;
     text-decoration: none;
     color: black;
 }
 
 
-.botones ul li a:hover{
+#botones ul li a:hover{
     color: rgb(177, 206, 14);
     font-weight: 400;
 }
@@ -57,12 +54,14 @@ h2{
 .encabezado{
     text-align: center;
     width: 100%;
+    
 }
 
 .encabezado img{
     border-radius: 5px;
     height: 80%;
-    width: 80%;
+    width: 100%;
+    
 }
 
 .catalogo{
@@ -70,26 +69,32 @@ h2{
 	justify-content: space-between;
     text-align: center;
     font-size: 2rem;
+    margin-top:2%;
 }
 
 .catalogo figure{
     text-align: center;
     width:30% ;
+    
 }
 
 .catalogo figure img{
     border-radius: 5px;
-    width: 100%;
+    width: 60%;
+    height: 80%;
 }
 
 figcaption{
-    color: rgb(0, 0, 0);
-    background-color: gray;
+    color: rgb(0, 0, 0,);
+    background-color: rgba(128, 128, 128, 40%);
+   
    
 }
 
 .video{
    text-align: center;
+   display: flex;
+   justify-content: center;
 
 }
 
@@ -98,9 +103,10 @@ figcaption{
 }
 
 .parrafovideo{
-    
+
     font-size: 1.5rem;
     width: auto;
+    
 
 }
 
@@ -114,13 +120,13 @@ footer{
 
 
 
-.container{
+.contenedor{
     display: grid;
     width: 99%;
-    grid-template-columns:repeat(3,auto) ;
-    grid-template-rows:repeat(5,auto) ;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(4,auto) ;
     align-items: center;
-    grid-template-areas: "nav nav nav"
+    grid-template-areas: "nav nav nav "
     "video cabecera cabecera"
     "s1 s1 s1"
     "cont pie pie";  
@@ -128,24 +134,29 @@ footer{
 
 
 .caja1{
-    grid-area: nav;
+    grid-area:nav;
 }
 
 .caja2{
     grid-area:cabecera;
+    margin-top: 5%;
        
 }
 
 .caja3{
     grid-area:s1;
+    margin-top: 5%;
+    
 }
 
 .caja4{
     grid-area: video;
+    padding:10%;
 }
 
 .caja5{
     grid-area:cont;
+    
    
 }
 
@@ -157,7 +168,7 @@ footer{
 
 
 @media all and (max-width:768px){
-    .container{
+    .contenedor{
         grid-template-columns:1fr ;
         grid-template-rows: auto ;
         align-items: center;
@@ -297,19 +308,21 @@ footer{
 }
 
 
-@media all and (min-width:768px){
+@media all and (max-width:768px){
     .containerm{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns:1fr ;
+        grid-template-rows: auto ;
         align-items: center;
-        grid-area: "navm"
+        grid-template-areas:  
+        "navm"
         "headerm"
-        "indum"
         "zapam"
+        "indum"
         "contm"
-        "piem";
+        "piem"
 
     }
+    
 }
 
 
@@ -321,3 +334,49 @@ footer{
 
 
 
+/*inicia grid seccion hombre*/
+
+/*.contenedorh{
+    display: grid;
+    width: 99%;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows:repeat(5,auto) ;
+    align-items: center;
+    grid-template-areas: "nav nav nav nav"
+    "head head head head"
+    "s1 s1 s1 s1"
+    "s2 s2 s2 s2"
+    "cont cont pie pie"
+
+
+}*/
+
+
+.cajah1{
+    grid-area:nav ;
+}
+
+
+.cajah2{
+    grid-area:head ;
+}
+
+
+
+.cajah3{
+    grid-area:s1 ;
+}
+
+
+.cajah4{
+    grid-area:s2 ;
+}
+
+
+.cajah5{
+    grid-area:cont;
+}
+
+.cajah6{
+    grid-area:pie ;
+}
