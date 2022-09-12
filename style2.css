@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
 
 * {
-    font-family:'Inconsolata', monospace;
+    font-family: 'Inconsolata', monospace;
     
 }
 
@@ -18,7 +18,30 @@ body{
     
 }
 
+.bg-pink{
+    background-color: rgb(226, 43, 165);
+    color: white;
 
+}
+
+
+.bg-blue{
+    background-color: #0d6efd;
+    color: white;
+
+}
+
+
+.bg-gris{
+    background-color: rgba(128, 128, 128, 0.582);
+
+}
+
+
+.bg-verde{
+    background-color: #0dfd99;
+
+}
 
 
 h2{
@@ -47,7 +70,7 @@ h2{
 
 
 #botones ul li a:hover{
-    color: rgb(177, 206, 14);
+    color: rgb(14, 206, 174);
     font-weight: 400;
 }
 
@@ -64,32 +87,7 @@ h2{
     
 }
 
-.catalogo{
-    display: flex;
-	justify-content: space-between;
-    text-align: center;
-    font-size: 2rem;
-    margin-top:2%;
-}
 
-.catalogo figure{
-    text-align: center;
-    width:30% ;
-    
-}
-
-.catalogo figure img{
-    border-radius: 5px;
-    width: 60%;
-    height: 80%;
-}
-
-figcaption{
-    color: rgb(0, 0, 0,);
-    background-color: rgba(128, 128, 128, 40%);
-   
-   
-}
 
 .video{
    text-align: center;
@@ -156,6 +154,8 @@ footer{
 
 .caja5{
     grid-area:cont;
+    margin-top: 2%;
+    text-align: center;
     
    
 }
@@ -283,6 +283,7 @@ footer{
 
 .mujer2{
     grid-area:headerm ;
+    margin-top: 2%;
     
 }
 
@@ -365,11 +366,13 @@ footer{
 
 .cajah3{
     grid-area:s1 ;
+    margin-top: 2%;
 }
 
 
 .cajah4{
     grid-area:s2 ;
+    margin-top: 2%;
 }
 
 
@@ -380,3 +383,4 @@ footer{
 .cajah6{
     grid-area:pie ;
 }
+
