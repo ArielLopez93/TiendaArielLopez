@@ -1,0 +1,66 @@
+.containerm{
+    display: grid;
+    width: 99%;
+    grid-template-columns:repeat(3,auto) ;
+    grid-template-rows:repeat(5,auto) ;
+    align-items: center;
+    grid-template-areas:"navm navm navm"
+    "contm contm headerm"
+    "zapam zapam zapam"
+    "indum indum indum"
+    "piem piem piem";
+      
+
+}
+
+
+
+.mujer1{
+    grid-area: navm;
+
+}
+
+.mujer2{
+    grid-area:headerm ;
+    margin-top: 2%;
+    
+}
+
+.mujer3{
+    grid-area:zapam ;
+    
+}
+
+.mujer4{
+    grid-area: indum;
+    
+}
+
+.mujer5{
+    grid-area: contm;
+    text-align: center;
+    
+}
+
+.mujer6{
+    grid-area: piem;
+    
+}
+
+
+@media all and (max-width:768px){
+    .containerm{
+        grid-template-columns:1fr ;
+        grid-template-rows: auto ;
+        align-items: center;
+        grid-template-areas:  
+        "navm"
+        "headerm"
+        "zapam"
+        "indum"
+        "contm"
+        "piem"
+
+    }
+    
+}
