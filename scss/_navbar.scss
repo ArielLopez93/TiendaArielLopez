@@ -1,0 +1,23 @@
+#botones{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    background-color: rgba(178, 197, 182, 50%);
+    ul{
+        li{
+            a{
+                font-size: $fontmd;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color:blue;
+                    font-weight: 400;
+                }
+            
+            }
+        }
+    }
+}
+
+
+

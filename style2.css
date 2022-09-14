@@ -55,7 +55,6 @@ h2{
     display: flex;
 	justify-content: space-between;
 	align-items: center;
-    position: sticky;
     background-color: rgba(178, 197, 182, 50%);
     
     
