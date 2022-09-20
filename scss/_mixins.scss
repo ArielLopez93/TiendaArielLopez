@@ -1,0 +1,23 @@
+@mixin text($fsize,$color,$interli,$fofami) {
+    font-size: $fsize;
+    color: $color;
+    line-height: $interli;
+    font-family: $fofami;
+    
+    
+}
+
+
+.p-nos{
+    @include text($fontmd, black,$fontmd, $mainfont)
+
+}
+
+
+h2{
+    @include text(3rem,back ,auto,$secondfont);
+    text-align: center;
+    
+    
+}
+
