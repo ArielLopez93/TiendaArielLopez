@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Nunito+Sans&display=swap");
+.bg-pink {
+  background-color: rgb(226, 43, 165);
+  color: white;
+}
+
+.bg-blue {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.bg-gris {
+  background-color: rgba(128, 128, 128, 0.582);
+}
+
+.bg-verde {
+  background-color: #0dfd99;
+}
+
 * {
   font-family: "Inconsolata", monospace;
 }
@@ -12,12 +33,6 @@ body {
   background-attachment: fixed;
   overflow: auto;
   background-size: cover;
-}
-
-h2 {
-  color: black;
-  text-align: center;
-  font-size: 2rem;
 }
 
 .encabezado {
@@ -36,6 +51,48 @@ footer {
 
 .text-center {
   text-align: center;
+}
+
+form, .formn {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 70%;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.field {
+  border: solid 1px;
+  padding: 10px;
+  width: 80%;
+}
+
+.bt, .bt-m, .bt-n {
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1em;
+  background-color: #0d6efd;
+}
+.bt:hover, .bt-m:hover, .bt-n:hover {
+  background-color: darkblue;
+}
+
+.bt-n {
+  background-color: #0dfd99;
+}
+.bt-n:hover {
+  background-color: green;
+}
+
+.formn {
+  width: 20%;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 #botones {
@@ -129,13 +186,124 @@ footer {
     grid-template-areas: "nav" "cabecera" "video" "s1" "cont" "pie";
   }
 }
+.bg-pink {
+  background-color: rgb(226, 43, 165);
+  color: white;
+}
+
+.bg-blue {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.bg-gris {
+  background-color: rgba(128, 128, 128, 0.582);
+}
+
+.bg-verde {
+  background-color: #0dfd99;
+}
+
+* {
+  font-family: "Inconsolata", monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../IMG/back.jpg);
+  background-attachment: fixed;
+  overflow: auto;
+  background-size: cover;
+}
+
+.encabezado {
+  text-align: center;
+  width: 100%;
+}
+.encabezado img {
+  border-radius: 5px;
+  height: 80%;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form, .formn {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 70%;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.field {
+  border: solid 1px;
+  padding: 10px;
+  width: 80%;
+}
+
+.bt, .bt-m, .bt-n {
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1em;
+  background-color: #0d6efd;
+}
+.bt:hover, .bt-m:hover, .bt-n:hover {
+  background-color: darkblue;
+}
+
+.bt-n {
+  background-color: #0dfd99;
+}
+.bt-n:hover {
+  background-color: green;
+}
+
+.formn {
+  width: 20%;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.bg-pink {
+  background-color: rgb(226, 43, 165);
+  color: white;
+}
+
+.bg-blue {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.bg-gris {
+  background-color: rgba(128, 128, 128, 0.582);
+}
+
+.bg-verde {
+  background-color: #0dfd99;
+}
+
 .containerm {
   display: grid;
   width: 99%;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(5, auto);
   align-items: center;
-  grid-template-areas: "navm navm navm" "contm contm headerm" "zapam zapam zapam" "indum indum indum" "piem piem piem";
+  grid-template-areas: "navm navm navm" "contm headerm headerm" "zapam zapam zapam" "indum indum indum" "piem piem piem";
 }
 
 .mujer1 {
@@ -171,4 +339,25 @@ footer {
     align-items: center;
     grid-template-areas: "navm" "headerm" "zapam" "indum" "contm" "piem";
   }
+}
+.bt-m {
+  background-color: rgb(226, 43, 165);
+}
+.bt-m:hover {
+  background-color: palevioletred;
+}
+
+.p-nos {
+  font-size: 2rem;
+  color: black;
+  line-height: 2rem;
+  font-family: "Inconsolata", monospace;
+}
+
+h2 {
+  font-size: 3rem;
+  color: back;
+  line-height: auto;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
