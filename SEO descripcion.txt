@@ -1,0 +1,4 @@
+SEO
+1.Se agrego un titulo nuevo y descriptivo para todas las paginas.
+2.Se agrego un meta con la descripcion detallada de cada seccion.
+3.Los "h1" de todas las paginas son mas detallados para una busqueda mas descriptiva.
