@@ -94,3 +94,18 @@ p{
     font-size:$fontmd;
     font-family: $secondfont;
 }
+
+@media all and (max-width:768px){
+    .formn{
+        width: 70%;
+        text-align: center;}
+    }
+
+
+    h1{
+        font-family: $secondfont;
+        text-align: center;
+        font-size: $fontlg;
+        padding:10% ;
+
+    }

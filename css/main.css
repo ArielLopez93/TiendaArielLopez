@@ -95,6 +95,19 @@ p {
   font-family: "Nunito Sans", sans-serif;
 }
 
+@media all and (max-width: 768px) {
+  .formn {
+    width: 70%;
+    text-align: center;
+  }
+}
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  padding: 10%;
+}
+
 #botones {
   display: flex;
   justify-content: space-between;
@@ -277,6 +290,19 @@ form, .formn {
 p {
   font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
+}
+
+@media all and (max-width: 768px) {
+  .formn {
+    width: 70%;
+    text-align: center;
+  }
+}
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  padding: 10%;
 }
 
 .bg-pink {
