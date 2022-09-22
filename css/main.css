@@ -105,9 +105,15 @@ h1 {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
   font-size: 3rem;
-  padding: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
+@media all and (max-width: 768px) {
+  .maps {
+    width: 80%;
+  }
+}
 #botones {
   display: flex;
   justify-content: space-between;
@@ -302,9 +308,15 @@ h1 {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
   font-size: 3rem;
-  padding: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
+@media all and (max-width: 768px) {
+  .maps {
+    width: 80%;
+  }
+}
 .bg-pink {
   background-color: rgb(226, 43, 165);
   color: white;
