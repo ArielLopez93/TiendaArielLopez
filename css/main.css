@@ -114,6 +114,12 @@ h1 {
     width: 80%;
   }
 }
+.esp {
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 #botones {
   display: flex;
   justify-content: space-between;
@@ -317,6 +323,12 @@ h1 {
     width: 80%;
   }
 }
+.esp {
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .bg-pink {
   background-color: rgb(226, 43, 165);
   color: white;
